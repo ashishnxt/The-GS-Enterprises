@@ -1,0 +1,1004 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Fontawesome CSS-->
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome/css/solid.css">
+    <link rel="stylesheet" href="fontawesome/css/brands.css">
+    <!-- Pages CSS Common-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="./nav.css">
+    <link href="css/common.css" rel="stylesheet"/>
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+      
+    <!-- JS Database-->
+    <script src="js/database.js"></script>
+
+    <link rel="icon" href="image2/toplogo.png" sizes="32x32">
+
+    <title>PRODUCTS</title>
+
+    <style>
+.title {
+    color: #FFF;
+    font-size: 5rem;
+    padding: 200px 0 60px 0;
+    margin: 0;}
+@media screen and (max-width:768px) {
+    
+    
+    
+    .title{
+                color: #FFF;
+                
+                padding: 40px 0 35px 0;
+                margin: 0;
+            }
+}
+
+.logo {
+    text-align: center; /* Center by default on larger screens */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    /* For mobile devices */
+    .logo {
+        text-align: left; /* Align logo to the left on mobile */
+    }
+
+    .logo img {
+        height: 200px;
+        margin-left: -30px; /* Adjust the height for mobile */
+    }
+}
+
+@media (min-width: 769px) {
+    /* For larger devices like laptops */
+    .logo img {
+        height: 200px; /* Adjust the height for laptops */
+    }
+}
+
+/* -------------------------------------------------- */
+.center-section {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .with {
+            width: 100%;
+            max-width: 1320px;
+        }
+
+section{
+  position: relative;  
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.swiper{
+  width: 90%;
+  max-width: 1200px;
+}
+
+.cardCustom{
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  height: 100%;
+  min-height: 250px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cardCustom::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: white;
+  border-radius: 20px 20px 0 0;
+}
+
+.cardCustom .cardCustom-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+
+section .cardCustom .videoCustom{
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+
+
+section .cardCustom .videoCustom video{
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Pagination and navigation buttons */
+.swiper-paginationCustom{
+  position: absolute;
+  top: 100%;
+  text-align: center;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #c1c1c1;
+}
+
+.swiper-button-nextCustom, .swiper-button-prevCustom{
+  opacity: 0.7;
+  color: #c1c1c1;
+  transition: all 0.3s ease;
+}
+
+.swiper-button-nextCustom:hover, .swiper-button-prevCustom:hover{
+  opacity: 1;
+  color: #c1c1c1;
+}
+
+/* === Media Queries for Responsiveness === */
+@media screen and (min-width: 768px) {
+  .cardCustom .cardCustom-content {
+    padding: 0px;
+  }
+
+  
+ 
+section .cardCustom .videoCustom video{
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+  .swiper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  .swiper {
+    width: 100%;
+    bottom: 30px;
+  }
+
+
+
+  section .cardCustom .videoCustom video{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+ 
+  .swiper-slide {
+    width: 100% !important;
+  }
+
+  .swiper-button-nextCustom, .swiper-button-prevCustom {
+    display: none;
+  }
+
+  .swiper-paginationCustom {
+    bottom: 0;
+    top: auto;
+  }
+}
+
+/*--------------------------------------------------------- */
+        .img-news{
+            width: 100%;
+            height: 250px;
+        }
+        .news-href{
+            color: #E0C389;
+            text-decoration: none !important;
+
+            transition: all 0.5s;
+        }
+        .news-href:hover{
+            color: #dba843 !important;
+        }
+
+
+
+/* ----------------------------------busness area--------------------------------------- */
+ 
+/* Base styles */
+.containery {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.sidebary {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebary-option {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.sidebary-option.active {
+    background-color: #003366;
+    color: white;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.content h1 {
+    color: #003366;
+    margin-top: 0;
+}
+
+
+.image-containery img {
+   
+    
+    display: none;
+    
+}
+.extra-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #f5f5f5;
+}
+
+.extra-image-container {
+    width: 23%;
+    margin: 5px;
+    text-align: center;
+}
+
+.extra-image {
+    width: 100%;
+    height: 250px;
+    transition: transform 0.3s ease;
+    border-radius: 5px ;
+    
+}
+
+
+.cardCustom {
+    position: relative;
+    overflow: hidden;
+}
+
+.videoCustom {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.videoCustom video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-name-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 10px;
+}
+
+.video-name {
+    margin: 0;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.image-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Responsive styles for extra images */
+@media (max-width: 767px) {
+    .extra-image-container {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .extra-image-container {
+        width: calc(100% - 20px);
+    }
+}
+
+/* .extra-image:hover {
+    transform: scale(1.1);
+} */
+
+/* Responsive styles */
+@media (min-width: 768px) {
+    .containery {
+        flex-direction: row;
+        margin: 20px 5px;
+    }
+
+    .sidebary {
+        width: 100%;
+        max-width: 300px;
+        height: 30vh;
+    }
+
+
+    .content {
+        flex: 1 1 60%;
+        max-width: 100%;
+    }
+
+    .image-containery {
+        flex: 1 1 40%;
+        max-width: 40%;
+    }
+
+    .sidebary-option.active {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .containery {
+        margin: 10px;
+    }
+
+    .sidebary {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sidebary-option {
+        /* width: auto; */
+        margin: 5px;
+    }
+
+    .content, .image-containery {
+        width: 100%;
+    }
+
+    .extra-image {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .extra-image {
+        width: calc(100% - 0px);
+    }
+
+
+
+
+}
+
+.cardCustom .product-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+
+  width: 100%;
+  border-radius: 0 0 10px 10px; /* Match the card's rounded corners */
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    font-size: 18px; /* Add this line to increase the font size */
+}
+
+.content h1 {
+    color: #003366;
+    margin-top: 0;
+}
+
+/* You may want to adjust the line height for better readability with the larger font size */
+.content p {
+    line-height: 1.6; /* Add this line for better line spacing */
+    font-size: 18px;
+}
+
+.content li {
+    line-height: 1.6; /* Add this line for better line spacing */
+    font-size: 15px;
+    color: #003366;
+    font-weight: 600;
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navpro containerpro">
+            <div class="navpro__datapro">
+              <div class="logo">
+                <a href="./index.html">
+                    <img src="./image2/logo-white-removebg-preview.png" alt="Your Logo" >
+                </a>
+                  </div>
+                
+                
+                <div class="navpro__togglepro" id="navpro-toggle">
+                    <i class="ri-menu-line navpro__burger"></i>
+                    <i class="ri-close-line navpro__close"></i>
+                </div>
+            </div>
+    
+            <!--=============== navpro MENU ===============-->
+            <div class="navpro__menupro" id="navpro-menu">
+                <ul class="navpro__listpro">
+                    <li><a href="./index.html" class="navpro__link">HOME</a></li>
+    
+                    <li><a href="./about.html" class="navpro__link">ABOUT US</a></li>
+    
+                    <!--=============== DROPDOWN 1 ===============-->
+                    <li class="dropdown__itempro">
+                        <div class="navpro__link">
+                            BUSINESS AREA  <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+    
+                        <ul class="dropdown__menupro">
+                            <li>
+                                <a href="news.html?service=construction" class="dropdown__linkpro">
+                                    AGRI MACHINARY
+                                </a>                          
+                            </li>
+    
+                            <li>
+                                <a href="news.html?service=agriculture" class="dropdown__linkpro">
+                               CONSTRUCTION AND FORESTRY
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="news.html?service=aftermarket" class="dropdown__linkpro">
+                                    RAILWAY
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="dropdown__itempro">
+                        <div class="navpro__link">
+                            PRODUCTS<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+    
+                        <ul class="dropdown__menupro">
+                            <li>
+                                <a href="product.html?service=construction" class="dropdown__linkpro" id="button10">
+                                     PRECISION MACHINING PARTS
+                                </a>                          
+                            </li>
+    
+                            <li>
+                                <a href="product.html?service=agriculture" class="dropdown__linkpro" id="button20">
+                                     HYDRAULIC DAMPER PARTS
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="product.html?service=aftermarket" class="dropdown__linkpro" id="button30">
+                                    POINT LINKAGE PARTS
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <!--=============== DROPDOWN 2 ===============-->
+                    <li class="dropdown__itempro">
+                        <div class="navpro__link">
+                            OUR FACILITIES<i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        </div>
+    
+                        <ul class="dropdown__menupro">
+                            <li>
+                                <a href="order.html?service=construction" class="dropdown__linkpro">
+                                    MACHINING
+                                </a>                          
+                            </li>
+    
+                            <li>
+                                <a href="order.html?service=agriculture" class="dropdown__linkpro">
+                                    FORGING
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="order.html?service=aftermarket" class="dropdown__linkpro">
+                                    SURFACE FINISH
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="order.html?service=qualitys" class="dropdown__linkpro">
+                                    QUALITY AND TESTING
+                                </a>
+                            </li>
+    
+                            <li>
+                                <a href="order.html?service=logistic" class="dropdown__linkpro">
+                                    LOGISTICS
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+    
+                    <li><a href="./privacy.html" class="navpro__link">QUALITY</a></li>
+                    <li><a href="./contact.html" class="navpro__link">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class=" bg-scan">
+        <div class=" container-lg">
+            <nav class="pt-5" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html" class="breadcrumb-a">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">PRODUCTS</li>
+                </ol>
+              </nav>
+            <h1 class="title">PRODUCTS</h1>
+        </div>
+    </div>
+
+
+
+    <div class="bg-light-30">
+        <div class="container-lg p-2 px-lg-3 div-white">
+
+
+
+            <div class="containery">
+                <div class="sidebary">
+                    <button class="sidebary-option active" data-option="construction">PRECISION MACHINING PARTS</button>
+                    <button id="hell" class="sidebary-option" data-option="agriculture">HYDRAULIC DAMPER PARTS</button>
+                    <button class="sidebary-option" data-option="aftermarket">AGRI MACHINARY PARTS</button>
+                </div>
+                <div class="content-wrappery">
+                    <div class="content" id="content">
+                        <!-- Content will be dynamically inserted here -->
+                    </div>
+                  
+                    <div class="image-containery">
+                        <img id="sector-image" src="./image2/ari.jpg" alt="Sector Image" />
+                    </div>
+
+                </div>
+            </div>
+            <div class="video-card-section" id="video-card-section">
+                <!-- Video card section will be dynamically inserted here -->
+            </div>
+            <div id="extra-images" class="extra-images-container">
+                <!-- Extra images will be inserted here dynamically -->
+            </div>
+            
+        </div>
+    </div>
+
+
+   
+    
+
+
+
+    
+    <div class="container-fluid bg-footer pt-5">
+        <div class="container-lg mt-0 mt-lg-0 pt-0 pt-lg-0">
+            <div class="row pb-4">
+                <div class="col-lg-4 mt-5">
+                    <a href="index.html"><img src="image2/logo-white-removebg-preview2.png" class="logo-brand"/></a>
+                   <div class="mt-3">
+                    <h5 class="link-footer-parent"><span class="">ADDRESS</span> </h5>
+                    <p class="footer-company-desc">
+                        C-16, Sector-22, Meerut Road Industrial Area, Ghaziabad, Uttar Pradesh, 201003.
+                    </p>
+                    <p class="footer-company-desc"> Email: Gsenterprisesgzb@gmail.com <br>Email: info@gsenterprises.com</P> 
+                    <p class="footer-company-desc"> Phone No.: +91 9899972449 <br> Phone No.: +91 7982761179 </P>
+                      
+                </div>
+                </div>
+                <div class="col-lg-4 fw-bold mt-5 pe-5 ">
+                    <h5 class="link-footer-parent"><span class="">USEFUL LINKS</span> </h5>
+                    <div class="row row-cols-2 w-100">
+                        <div class="col">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item">
+                                    <a href="index.html" class="nav-link ms-0 mb-1 px-0  link-footer">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="about.html" class="nav-link ms-0  mb-1 px-0 link-footer link-active-footer">About us</a>
+                                </li>
+                                <li class="nav-item"></li>
+                                    <a href="news.html" class="nav-link ms-0 mb-1  px-0 link-footer">Business Area</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="product.html" class="nav-link ms-0 mb-1  px-0 link-footer">Product</a>
+                                </li>
+                               
+                                <li class="nav-item">
+                                    <a href="order.html" class="nav-link ms-0  mb-1 px-0 link-footer">Our facalties</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul class="nav flex-column ">
+                            </li>
+                            <li class="nav-item">
+                                <a href="privacy.html" class="nav-link ms-0 mb-1  px-0 link-footer">Quality</a>
+                            </li>
+                                <li class="nav-item"></li>
+                                    <a href="contact.html" class="nav-link ms-0 mb-1 px-0  link-footer">Contact us</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a href="career.html" class="nav-link ms-0 mb-1  px-0 link-footer">Career</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="faq.html" class="nav-link ms-0 mb-1  px-0 link-footer">FAQ</a>
+                              
+                                <li class="nav-item">
+                                    <a href="terms.html" class="nav-link ms-0 mb-1  px-0 link-footer">Term use</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-5">
+                    <h5 class="link-footer-parent"><span class="">SOCAL MEDIA LINKS</span> </h5>
+
+                           
+                    <div class="mt-4">
+                      <!-- text -->
+                        <div class="d-inline-block   me-3">
+                            <a href="https://x.com/gsenterprises79?t=iln_FvR0rjkvJwMZuzoSzg&s=08 ">
+                                <i class="fa-brands fa-twitter footer-links"></i>
+                            </a>
+                        </div>
+                        <div class="d-inline-block  me-3">
+                            <a href="https://wa.me/qr/P23WPCABGN6BM1 ">
+                                <i class="fa-brands fa-whatsapp footer-links"></i>
+                            </a>
+                        </div>
+                        
+                     
+                        <div class="d-inline-block  me-3">
+                            <a href="https://www.linkedin.com/company/gs-enterprisesgzb/">
+                                <i class="fa-brands fa-linkedin-in footer-links"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bg-footer text-center text-white fw-bold  fs-12 py-4 footer-border-top">
+         All rights reserved to GS Enterprise © 2024
+    </div>
+    <!-- Bootstrap JS-->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Pages JS Common-->
+    <script src="js/common.js"></script>
+    <script>
+        var newsdiv=document.getElementById('innerNews');
+        for(let n of news)
+        {
+            newsdiv.innerHTML+=`
+            <div class="col-lg-4 my-3">
+                    <div class=" bg-white p-3">
+                        <img src="image/${n.img}" alt="" class="img-news">
+                        
+                       
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+
+
+ <script>
+  const contentData = {
+    construction: {
+        title: "PRECISION MACHINING PARTS",
+        content: `
+            <p>Precision machined parts (PMP) are components requiring stringent material and manufacturing specifications and controls. Complex product geometries are manufactured on various types of CNC equipment followed by heat treatment processes such as induction hardening, nitrocarburizing, grinding and surface finishing operations. These components are used in applications across Off Highway Vehicles (OHV) in engines, transmissions, hydraulics, and other applications.</p>
+        `,
+        image: { src: "./image2/BUS-ARI.jpg", name: "BUS ARI" },
+        extraImages: [
+            { src: "./Pro/pr1.jpg", name: "PIN" },
+            { src: "./Pro/pr2.jpg", name: "BUSH" },
+            { src: "./Pro/pr3.jpg", name: "BUSH" },
+            { src: "./Pro/pr4.jpg", name: "BUSH" },
+            { src: "./Pro/pr5.jpg", name: "PIPE" },
+            { src: "./Pro/pr6.jpg", name: "MALE GUIDE PLATE" },
+            { src: "./Pro/pr7.jpg", name: "HANDLE" },
+            { src: "./Pro/pr8.jpg", name: "FEMAILE GUIDE PLATE" },
+            { src: "./Pro/pr9.jpg", name: "PIN" },
+        ],
+        backgroundImage: "./image2/productbgg.jpg",
+        videos: [
+            { src: "./Pro/prv1.mp4", name: "PIN" },
+            { src: "./Pro/prv2.mp4", name: "BUSH" },
+            { src: "./Pro/prv3.mp4", name: "BUSH" },
+            { src: "./Pro/prv5.mp4", name: "PIPE" },
+        ]
+    },
+    agriculture: {
+        title: "HYDRAULIC DAMPER PARTS",
+        content: `
+            <p>GS ENTERPRISES is the leading manufacturer of bogie parts specialization in hydraulic damper parts. Product Portfolio offered to the Railway segment includes RodGuide, Piston, Bottom valve, Cylinder Bottom, LockRing, Drain Disc and many more.</p>
+        `,
+        image: { src: "./image2/RDO-forestry-shoot-5.jpg", name: "RDO Forestry" },
+        extraImages: [
+            { src: "./hy/1 (1).jpg", name: "PLATE" },
+            { src: "./hy/1 (2).jpg", name: "VALVE CONE" },
+            { src: "./hy/1 (3).jpg", name: "VALVE SEAT & VALVE SCREWS" },
+            { src: "./hy/1 (4).jpg", name: "BOTTOM VALVE" },
+            { src: "./hy/1 (5).jpg", name: "BOTTOM VALVE" },
+            { src: "./hy/1 (6).jpg", name: "CYLINDER BOTTOM" },
+            { src: "./hy/1 (7).jpg", name: "CYLINDER BOTTOM" },
+            { src: "./hy/1 (8).jpg", name: "LOCK RING" },
+            { src: "./hy/1 (9).jpg", name: "PISTON" },
+            { src: "./hy/1 (10).jpg", name: "PISTON" },
+            { src: "./hy/hy1.jpg", name: "ROD GUIDE" },
+            { src: "./hy/ra1.jpg", name: "ROD GUIDE" },
+        ],
+        backgroundImage: "./image2/productbgg.jpg",
+        videos: [
+            { src: "./Pro/agv2.mp4", name: "BUSH" },
+            { src: "./Pro/agv5.mp4", name: "BUSH" },
+            { src: "./Pro/agv8.mp4", name: "BUSH" },
+            { src: "./Pro/agv10.mp4", name: "BUSH" },
+        ]
+    },
+    aftermarket: {
+        title: "AGRI MACHINARY PARTS",
+        content: `
+            <p>GSE is a leading manufacturer of agri machinery Parts including bush, pin pivot, spindle, nut, plate and many more. Product Portfolio offered to the agriculture segment includes Precision Machined Parts (PMP), Power take-off (PTO) components and Forgings.</p>
+        `,
+        image: { src: "./image2/bus-back3.png", name: "Agricultural Machinery" },
+        extraImages: [
+            { src: "./Pro/ag1.jpg", name: "PIN PIVOT" },
+            { src: "./Pro/ag2.jpg", name: "PIN PIVOT" },
+            { src: "./Pro/ag3.jpg", name: "SPENDLE" },
+            { src: "./Pro/ag4.jpg", name: "PIN" },
+            { src: "./Pro/ag5.jpg", name: "BUSH" },
+            { src: "./Pro/ag6.jpg", name: "PLATE" },
+            { src: "./Pro/ag7.jpg", name: "BUSH" },
+            { src: "./Pro/ag8.jpg", name: "BUSH" },
+            { src: "./Pro/ag9.jpg", name: "BUSH" },
+            { src: "./Pro/ag10.jpg", name: "BUSH" },
+            { src: "./Pro/ag11.jpg", name: "PIN" },
+            { src: "./Pro/ag12.jpg", name: "PULLY" },
+        ],
+        backgroundImage: "./image2/productbgg.jpg",
+        videos: [
+            { src: "./Pro/agv1.mp4", name: "PIN PIVOT " },
+            { src: "./Pro/agv3.mp4", name: "SPENDLE" },
+            { src: "./Pro/agv4.mp4", name: "PIN" },
+            { src: "./Pro/agv6.mp4", name: "PLATE" },
+            { src: "./Pro/agv7.mp4", name: "BUSH" },
+            { src: "./Pro/agv9.mp4", name: "BUSH" },
+            { src: "./Pro/agv11.mp4", name: "PIN " },
+            { src: "./Pro/agv12.mp4", name: "PULLEY" },
+        ]
+    }
+};
+
+function updateContent(option) {
+    const content = document.getElementById('content');
+    const videoCardSection = document.getElementById('video-card-section');
+    const sectorImage = document.getElementById('sector-image');
+    const bgScan = document.querySelector('.bg-scan');
+    const data = contentData[option];
+
+    // Update content and main image
+    content.innerHTML = `
+        <h1>${data.title}</h1>
+        ${data.content}
+    `;
+    sectorImage.src = data.image.src;
+    sectorImage.alt = data.title;
+    sectorImage.title = data.image.name;
+
+    // Update background image
+    if (bgScan) {
+        bgScan.style.backgroundImage = `url(${data.backgroundImage})`;
+    }
+
+    // Update video card section
+    videoCardSection.innerHTML = `
+        <section class="with">
+            <div class="swiper customSwiper containerCustom">
+                <div class="swiper-wrapper contentCustom">
+                    ${data.videos.map(video => `
+                        <div class="swiper-slide cardCustom">
+                            <div class="cardCustom-content">
+                                <div class="videoCustom">
+                                    <video src="${video.src}" autoplay muted loop></video>
+                                    <div class="video-name-container">
+                                        <p class="video-name">${video.name}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    `).join('')}
+                </div>
+            </div>
+            <div class="swiper-button-nextCustom"></div>
+            <div class="swiper-button-prevCustom"></div>
+            <div class="swiper-paginationCustom"></div>
+        </section>
+    `;
+
+    // Update extra images
+    const extraImagesContainer = document.getElementById('extra-images');
+    extraImagesContainer.innerHTML = ''; // Clear previous images
+    data.extraImages.forEach(image => {
+        const imgContainer = document.createElement('div');
+        imgContainer.classList.add('extra-image-container');
+        
+        const imgElement = document.createElement('img');
+        imgElement.src = image.src;
+        imgElement.alt = `${data.title} Extra Image`;
+        imgElement.classList.add('extra-image');
+        
+        const nameElement = document.createElement('p');
+        nameElement.classList.add('image-name');
+        nameElement.textContent = image.name;
+        
+        imgContainer.appendChild(imgElement);
+        imgContainer.appendChild(nameElement);
+        extraImagesContainer.appendChild(imgContainer);
+    });
+
+        // Initialize Swiper
+        initSwiper();
+    }
+
+    function initSwiper() {
+        new Swiper(".customSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-paginationCustom",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-nextCustom",
+                prevEl: ".swiper-button-prevCustom",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    spaceBetween: 10,
+                },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 2,
+                    spaceBetween: 20,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    slidesPerGroup: 4,
+                    spaceBetween: 30,
+                },
+            },
+        });
+    }
+
+    // Add click event listeners to sidebar buttons
+    document.querySelectorAll('.sidebary-option').forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelectorAll('.sidebary-option').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+            updateContent(button.dataset.option);
+        });
+    });
+
+    // Function to get URL parameter
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    // Check for service parameter and trigger button click on page load
+    window.addEventListener('load', function() {
+        var service = getUrlParameter('service');
+        if (service) {
+            var button = document.querySelector(`.sidebary-option[data-option="${service}"]`);
+            if (button) {
+                button.click();
+            }
+        } else {
+            // If no service specified, default to 'construction' (MACHINARY)
+            updateContent('construction');
+        }
+    });
+</script>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="./nav.js"></script>
+
+</body>
+</html>
